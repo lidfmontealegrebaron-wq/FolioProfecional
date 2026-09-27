@@ -363,9 +363,11 @@ footer {
   .nav-list {
     position: absolute;
     top: 100%;
+    /* Compensamos el padding del header para que el menú
+       llegue de borde a borde de la pantalla, no solo
+       hasta el borde interno del padding del header */
     left: calc(-1 * var(--spacing));
     right: calc(-1 * var(--spacing));
-    z-index: 99;
     flex-direction: column;
     gap: 0;
     background-color: var(--color-surface);
@@ -373,6 +375,7 @@ footer {
     max-height: 0;
     overflow: hidden;
     transition: max-height var(--transition);
+    z-index: 99;
   }
 
   .nav-list.active {
