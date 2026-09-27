@@ -36,9 +36,24 @@
 html {
   scroll-behavior: smooth;
 }
+#inici o {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  background-image: url('../img/b178e58990b4defde40b0710d68ec4d9.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 var(--spacing);
+}
 
 body {
   background-color: var(--color-bg);
+  background-image: url('../img/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -68,6 +83,7 @@ section {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 5rem var(--spacing);
+  scroll-margin-top: 6rem;
 }
 
 /* ============================
@@ -350,6 +366,14 @@ footer {
 
 .social-list a:hover {
   color: var(--color-accent);
+}
+
+@media (min-width: 769px) {
+  body {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
 
 /* ============================
