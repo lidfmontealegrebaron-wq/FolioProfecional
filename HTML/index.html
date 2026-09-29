@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +23,7 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#acerca">Acerca de mí</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#proyectos">Proyectos Y Experiencias</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -29,8 +32,9 @@
   <main>
 
     <section id="inicio">
-      <h1>Hola, soy Lidfny Sofia Montealegre Baron</h1>
-      <p>Estudiante de Publicidad y Mercadeo con formación complementaria en desarrollo de software.</p>
+      <h1>HOLA,SOY LIDFNY SOFIA MONTEALEGRE BARÓN</h1>
+      <p>Estudiante de Tecnología en Publicidad y Mercadeo con formación en desarrollo web (HTML, CSS, JS) y programación en Python (IBM).</p> 
+      <p>Interesada en el desarrollo de software, análisis de datos aplicados al marketing y creación digital. Proactiva, autodidacta y en constante formación para asumir mi primer rol técnico o creativo.</p>
       <a href="#contacto" class="btn">Contáctame</a>
     </section>
 
@@ -38,8 +42,8 @@
       <h2>Acerca de mí</h2>
       <img src="img/0e709a3cf704633a1fe31be8ec392854.jpg" alt="Foto de perfil Lidfny Sofia Montealegre Baron">
       <div class="texto-acerca">
-        <p>Aquí va un párrafo corto sobre quién eres, qué estudias y qué te apasiona.</p>
-        <p>Aquí va un segundo párrafo sobre tus intereses o tu objetivo profesional.</p>
+        <p>Bueno hablando del alma y no del cuerpo la verdad disfrute creando estilos y diseños a mi gusto, cinceramente esta pagina esta muy de mi estilo perdon si revisan este trabajo y no es de su gusto.</p>
+        <p>Mis bjetivos a corto plaso es condegir un trabajo que me permita desarrollarme profesionalmente, es dificil encontrar trabajo que lo acepten a uno sin experiencia pero tengo fe, mis objetivoa a mediano plazo son empesar a estudiar mi carrera profecional en Diseño hipermedia entre otros.</p>
       </div>
     </section>
 
@@ -48,49 +52,52 @@
 
       <div class="skills-grid">
         <div class="skill">
-          <h3>Photoshop</h3>
+          <h3>Trabajo en equipo y Aprendizaje autodidacta</h3>
           <div class="skill-bar">
-            <div class="skill-fill" data-porcentaje="85"></div>
+            <div class="skill-fill" data-porcentaje="90"></div>
           </div>
         </div>
 
         <div class="skill">
-          <h3>HTML5</h3>
-          <div class="skill-bar">
-            <div class="skill-fill" data-porcentaje="70"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <h3>Estrategia de contenido</h3>
+          <h3>Creatividad y Comunicación efectiva</h3>
           <div class="skill-bar">
             <div class="skill-fill" data-porcentaje="80"></div>
           </div>
         </div>
-      </div>
 
+        <div class="skill">
+          <h3>Nivel de Inglés</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-porcentaje="60"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>Pensamiento lógico y desarrollo WEB</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-porcentaje="70"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="proyectos">
-      <h2>Proyectos</h2>
+      <h2>Proyectos Y experiencias</h2>
 
       <ul class="project-list">
         <li class="project-card">
-          <h3>Nombre del proyecto 1</h3>
-          <p>Breve descripción del proyecto y qué hiciste en él.</p>
-          <a href="#">Ver proyecto</a>
+          <h3>Estrategias Publicitarias y Análisis de Marca</h3>
+          <p>Desarrollo de campañas publicitarias académicas, estudios de mercado ficticios y propuestas visuales de comunicación. Integración de conceptos de mercadeo digital con prototipado web.</p>
         </li>
 
         <li class="project-card">
-          <h3>Nombre del proyecto 2</h3>
-          <p>Breve descripción del proyecto y qué hiciste en él.</p>
-          <a href="#">Ver proyecto</a>
+          <h3>Proyectos de Programación en Python</h3>
+          <p>Creación de scripts básicos para el procesamiento y análisis de datos aplicados a entornos digitales, utilizando librerías fundamentales de Python como parte de la ruta de aprendizaje de IBM.</p>
         </li>
 
         <li class="project-card">
-          <h3>Nombre del proyecto 3</h3>
-          <p>Breve descripción del proyecto y qué hiciste en él.</p>
-          <a href="#">Ver proyecto</a>
+          <h3>Proyecto de Desarrollo Web</h3>
+          <p>Diseño y maquetación de sitios web interactivos utilizando HTML, CSS y JavaScript. Implementación de lógica básica en backend y buenas prácticas de código para la creación de interfaces funcionales y dinámicas.</p>
         </li>
       </ul>
     </section>
@@ -100,7 +107,7 @@
 
       <form id="form-contacto" novalidate>
         <div class="form-group">
-          <label for="nombre">Nombre</label>
+          <label for="nombre">Nombre de la empresa</label>
           <input type="text" id="nombre" name="nombre" required>
           <span class="error-msg" id="error-nombre"></span>
         </div>
@@ -112,7 +119,8 @@
         </div>
 
         <div class="form-group">
-          <label for="mensaje">Mensaje</label>
+          <label for="mensaje">Mensaje (descriptivo del puesto de trabajo y lugar de trabajo)</label>
+          </label>
           <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
           <span class="error-msg" id="error-mensaje"></span>
         </div>

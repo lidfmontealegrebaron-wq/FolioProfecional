@@ -1,27 +1,42 @@
 /* ============================
    VARIABLES CSS
    ============================ */
-:root {
-  --color-bg: #10121b;
+ @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Inter:wght@300;400;600&display=swap');   
+   :root{
+  --color-bg: #000000;
   --color-surface: #1a1d29;
   --color-surface-hover: #22263a;
   --color-border: #2c3044;
 
-  --color-text: #e8e9f0;
-  --color-text-muted: #8d92a8;
+  --color-text: #ffffff;
+  --color-text-muted: #ffffff;
 
-  --color-accent: #4fd6c7;
-  --color-accent-soft: rgba(79, 214, 199, 0.15);
-  --color-highlight: #e88fc2;
-
-  --font-heading: 'Space Grotesk', 'Segoe UI', sans-serif;
-  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --color-accent: #8e8ad1;
+  --color-accent-soft: rgb(14, 13, 88);
+  --color-highlight: #d11881;
+  --color-logo: #c11730; /* rojo sangre, como el título de Nosferatu */
+h2 {
+  font-size: 2rem;
+  /* conserva aquí las demás propiedades que ya tienes */
+}h2 {
+  font-size: 2rem;
+  /* conserva aquí las demás propiedades que ya tienes */
+}h2 {
+  font-size: 2rem;
+  /* conserva aquí las demás propiedades que ya tienes */
+}h2 {
+  font-size: 2rem;
+  /* conserva aquí las demás propiedades que ya tienes */
+}
+   --font-heading: 'UnifrakturCook', serif;
+   --font-body: 'Inter', 'Segoe UI', sans-serif;
+   --font-editorial: 'Fraunces', serif;
 
   --radius: 10px;
   --transition: 0.25s ease;
 
   --max-width: 1100px;
-  --spacing: 1.5rem;
+  --spacing: 1.5rem
 }
 
 /* ============================
@@ -36,13 +51,17 @@
 html {
   scroll-behavior: smooth;
 }
-#inici o {
+
+html, body {
+  overflow-x: hidden;
+}
+
+#inicio {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
-  background-image: url('../img/b178e58990b4defde40b0710d68ec4d9.jpg');
   background-size: cover;
   background-position: center;
   padding: 0 var(--spacing);
@@ -50,7 +69,7 @@ html {
 
 body {
   background-color: var(--color-bg);
-  background-image: url('../img/fondo.png');
+  background-image: url('../img/6813114a43b8e1ece44084f58366203a.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -73,10 +92,31 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3 {
-  font-family: var(--font-heading);
-  font-weight: 600;
+h1 {
+  font-family: 'grenze gotisch', serif;
+  font-weight: 400;
   line-height: 1.2;
+  color: var(--color-titel);
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'grenze gotisch', serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-title);
+  letter-spacing: 0.3px;
+  transform: scaleY(1.15);
+  transform-origin: bottom left;
+}
+
+h3 {
+  font-family: var(--font-editorial);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-title);
+  letter-spacing: 0.3px;
 }
 
 section {
@@ -103,9 +143,11 @@ header {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-family: 'UnifrakturCook', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--color-logo);
 }
 
 .nav-list {
@@ -114,8 +156,9 @@ header {
 }
 
 .nav-list a {
+  font-family: "Grenze Gotisch", serif;
   color: var(--color-text);
-  font-size: 0.95rem;
+  font-size: 1.8rem;
   transition: color var(--transition);
 }
 
@@ -168,10 +211,11 @@ header {
 }
 
 #inicio h1 {
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(2.5rem, 6vw, 4rem);
 }
 
 #inicio p {
+  font-size: 1.1rem;
   color: var(--color-text-muted);
   max-width: 500px;
 }
@@ -179,7 +223,9 @@ header {
 .btn {
   display: inline-block;
   align-self: flex-start;
-  padding: 0.8rem 1.8rem;
+  font-family: "Grenze Gotisch", serif;
+  font-size: 2.1rem;
+  padding: 0.8rem 2.8rem;
   background-color: var(--color-accent);
   color: var(--color-bg);
   font-weight: 600;
@@ -215,6 +261,10 @@ header {
 #acerca div.texto-acerca {
   flex: 1;
   min-width: 260px;
+}
+
+#acerca p {
+  font-size: 1.1rem;
 }
 
 /* ============================
@@ -314,7 +364,7 @@ header {
 
 .form-group input,
 .form-group textarea {
-  background-color: var(--color-surface);
+  background-color: var(--color-accent-soft);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 0.7rem 0.9rem;
@@ -380,27 +430,30 @@ footer {
    RESPONSIVE (Mobile)
    ============================ */
 @media (max-width: 768px) {
+  body {
+    background-position: right center;
+  }
+
   .menu-toggle {
     display: flex;
+    margin-left: auto;
   }
 
   .nav-list {
-    position: absolute;
-    top: 100%;
-    /* Compensamos el padding del header para que el menú
-       llegue de borde a borde de la pantalla, no solo
-       hasta el borde interno del padding del header */
-    left: calc(-1 * var(--spacing));
-    right: calc(-1 * var(--spacing));
-    flex-direction: column;
-    gap: 0;
-    background-color: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height var(--transition);
-    z-index: 99;
-  }
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  right: 1rem;
+  z-index: 99;
+  flex-direction: column;
+  gap: 0;
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: inset 0 -12px 12px -10px rgba(0, 0, 0, 0.5);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition);
+}
 
   .nav-list.active {
     max-height: 300px;
@@ -418,5 +471,15 @@ footer {
 
   .project-list {
     grid-template-columns: 1fr;
+  }
+
+  #inicio {
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  section {
+    padding: 3rem var(--spacing);
   }
 }
