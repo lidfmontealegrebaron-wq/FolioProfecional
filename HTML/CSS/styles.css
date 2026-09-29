@@ -217,7 +217,17 @@ header {
 #inicio p {
   font-size: 1.1rem;
   color: var(--color-text-muted);
-  max-width: 500px;
+}
+
+.texto-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  max-width: 600px;
 }
 
 .btn {
@@ -261,10 +271,18 @@ header {
 #acerca div.texto-acerca {
   flex: 1;
   min-width: 260px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
 }
 
-#acerca p {
-  font-size: 1.1rem;
+#acerca div.texto-acerca p {
+  margin-bottom: 1rem;
+}
+
+#acerca div.texto-acerca p:last-child {
+  margin-bottom: 0;
 }
 
 /* ============================
@@ -411,11 +429,15 @@ footer {
 }
 
 .social-list a {
-  color: var(--color-text);
+  color: #ff5c5c;
 }
 
 .social-list a:hover {
-  color: var(--color-accent);
+  color: #ff5c5c;
+}
+
+footer p {
+  color: #ff5c5c;
 }
 
 @media (min-width: 769px) {
@@ -476,7 +498,6 @@ footer {
   #inicio {
     min-height: auto;
     padding-top: 4rem;
-    padding-bottom: 2rem;
   }
 
   section {

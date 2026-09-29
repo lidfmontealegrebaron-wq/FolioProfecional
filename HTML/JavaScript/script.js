@@ -44,6 +44,7 @@ skillFills.forEach((barra) => observerHabilidades.observe(barra));
 // 3. VALIDACIÓN DE FORMULARIO EN TIEMPO REAL
 // ============================
 const form = document.getElementById('form-contacto');
+const mensajeExito = document.getElementById('texto-exito');
 const campoNombre = document.getElementById('nombre');
 const campoEmail = document.getElementById('email');
 const campoMensaje = document.getElementById('mensaje');
@@ -123,7 +124,7 @@ form.addEventListener('submit', (evento) => {
   const mensajeValido = validarMensaje();
 
   if (nombreValido && emailValido && mensajeValido) {
-    alert('¡Mensaje enviado con éxito! Pronto te contactaré.');
+    mensajeExito.hidden = false;
     form.reset();
   }
 });
